@@ -31,6 +31,3 @@ Linhas de comando úteis no desenvolvimento e lançamento do site
 ```npm start``` ou ```npm run dev```
 
 > Ao salvar alterações o projeto realizar um live reload. Fique de atento aos logs no console, caso ocorram erros os mesmo aparecem lá.  
-
-
-# criptoapp
