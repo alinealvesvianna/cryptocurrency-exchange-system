@@ -16,18 +16,6 @@ const rules = {
       use: 'babel-loader',
       exclude: '/node_modules/'
     },
-    // {
-    //   test: /\.(jpg|png|svg|gif)/,
-    //   include: pathName,
-    //   use: {
-    //     loader: 'file-loader',
-    //     options: {name: fileName}
-    //   }
-    // },
-    {
-      test: /\.(jpg|png|svg|gif)$/,
-      loader: 'file-loader?name=assets/images/[name].[ext]'
-    },
     {
       test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
       include: pathName,

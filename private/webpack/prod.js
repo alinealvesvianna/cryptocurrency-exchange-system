@@ -11,10 +11,6 @@ const rules = {
       use: 'babel-loader'
     },
     {
-      test: /\.(jpg|png|svg|gif)$/,
-      loader: 'file-loader?name=assets/images/[name].[hash:5].[ext]'
-    },
-    {
       test: /\.(eot|ttf|woff|woff2)(\?v=\d+\.\d+\.\d+)?$/,
       include: pathName,
       use: {

@@ -27,16 +27,6 @@ module.exports = (env) => {
     watch: true,
     plugins: [
       new CleanWebpackPlugin('dist'),
-      new CopyWebpackPlugin([
-        {
-          from: './node_modules/ComponentsOi/dist/assets/fonts/*',
-          to: './assets/fonts/[name].[ext]'
-        },
-        {
-          from: './src/assets/',
-          to: './assets/'
-        }
-      ]),
       new StaticSiteGeneratorPlugin({
         entry: 'main',
         paths: ss.routes

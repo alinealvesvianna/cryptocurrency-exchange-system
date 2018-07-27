@@ -8,8 +8,6 @@ import store from './store';
 import Template from './Template';
 import App from './App';
 
-const requireContextImages = require.context('./assets/images', true, /^\.\/.*\.(jpg|png|svg|gif)$/);
-requireContextImages.keys().map(requireContextImages);
 
 /* Client render (optional) */
 if (typeof document !== 'undefined') {

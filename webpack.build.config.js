@@ -3,7 +3,7 @@ const fs = require('fs');
 const webpack = require('webpack');
 const StaticSiteGeneratorPlugin = require('static-site-generator-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+// const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 const ss = require('./src/ss_routes');
 const conf = require('./private/webpack/prod');
@@ -26,20 +26,6 @@ module.exports = (env) => {
     module: conf,
     plugins: [
       new CleanWebpackPlugin('./dist'),
-      new CopyWebpackPlugin([
-        {
-          from: './src/assets/pdf',
-          to: './assets/pdf/'
-        },
-        {
-          from: './src/assets/fonts',
-          to: './assets/fonts/'
-        },
-        {
-          from: './favicon.ico',
-          to: './'
-        }
-      ]),
       new webpack.optimize.UglifyJsPlugin({
         minimize: true,
         comments: false, // remove comments
