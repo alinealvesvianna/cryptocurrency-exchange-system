@@ -19,7 +19,7 @@ module.exports = (env) => {
     entry: './src/index.js',
     output: {
       path: path.resolve(__dirname, outputPath),
-      filename: 'bundle.[hash].js',
+      filename: 'bundle.js',
       libraryTarget: 'umd'
     },
     devtool: 'source-map',
