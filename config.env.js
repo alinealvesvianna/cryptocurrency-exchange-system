@@ -1,1 +1,1 @@
-export default {NODE_ENV: 'development'} 
+export default {NODE_ENV: 'production'} 

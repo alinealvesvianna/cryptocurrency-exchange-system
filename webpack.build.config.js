@@ -54,10 +54,6 @@ module.exports = (env) => {
         moveToParents: true
       }),
       new webpack.optimize.ModuleConcatenationPlugin(),
-      new webpack.IgnorePlugin(
-        /^\.\/locale$/,
-        [/moment$/]
-      ),
       new webpack.NamedModulesPlugin(),
       new webpack.NoEmitOnErrorsPlugin(),
       // Get all assets files names, and create an array with file names with and without hash
