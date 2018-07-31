@@ -12,7 +12,7 @@ Conversor de criptomoedas desenvolvido com atomic design, react, styled componen
 Como configurar o projeto localmente.
 
 ### Ambiente e config.env.js
-O arquivo `config.env.js` _seta_ o valor da variável de ambiente em que o projeto está. Por exemplo: ao executar `npm run build:staging` o valor da variável `NODE_ENV` _setada_ no arquivo será reescrita para `'staging'`. Caso precise que algum valor seja trocado de acordo com a variável de ambiente que o projeto está, basta adicioná-lo ao arquivo `./src/config/config.js`.
+O arquivo `config.env.js` _seta_ o valor da variável de ambiente em que o projeto está. Por exemplo: ao executar `npm run build:staging` o valor da variável `NODE_ENV` _setada_ no arquivo será reescrita para `'staging'`..
 ```javascript
 export default {NODE_ENV:  'development'}
 ```
